@@ -7,6 +7,7 @@ import { BodyComponent } from './componentes/body/body.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { LoginComponent } from './componentes/header/login/login.component';
 import { HttpClientModule } from '@angular/common/http'
+import { AppRoutingModuleTsModule } from './app-routing.module.ts/app-routing.module.ts.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http'
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModuleTsModule
   ],
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, BodyComponent, FooterComponent, LoginComponent]
